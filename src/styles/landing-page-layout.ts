@@ -27,7 +27,11 @@ export const StyledHeader = styled(Header)`
 `;
 
 export const StyledContent = styled(Content)`
-  padding: 0 48px;
+  padding: 0 16px;
+
+  @media (min-width: 768px) {
+    padding: 0 48px;
+  }
 `;
 
 export const StyledFooter = styled(Footer)`

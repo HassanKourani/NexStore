@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 import LandingPageLayout from "./pages/landing-page-layout";
 import { ConfigProvider } from "antd";
+import Categories from "./pages/categories";
 
 function App() {
   return (
@@ -35,12 +36,12 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPageLayout />}>
-            <Route path="/" element={<>Content</>} />
-            <Route path="/stores" element={<>Stores</>} />
-            <Route path="/categories" element={<>Categories</>} />
+            <Route path="/" element={<>Coming Soon</>} />
+            <Route path="/stores" element={<>Coming Soon</>} />
+            <Route path="/categories" element={<Categories />} />
             <Route path=":category">
-              <Route index element={<>Category Page</>} />
-              <Route path=":store" element={<>Store Page</>} />
+              <Route index element={<>Coming Soon</>} />
+              <Route path=":store" element={<>Coming Soon</>} />
             </Route>
           </Route>
         </Routes>

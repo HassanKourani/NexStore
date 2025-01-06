@@ -70,10 +70,12 @@ const LandingPageLayout = () => {
             return (
               <Breadcrumb.Item key={index}>
                 {isLast ? (
-                  segment.charAt(0).toUpperCase() + segment.slice(1)
+                  segment.replace(/-/g, " ").charAt(0).toUpperCase() +
+                  segment.replace(/-/g, " ").slice(1)
                 ) : (
                   <Link to={path}>
-                    {segment.charAt(0).toUpperCase() + segment.slice(1)}
+                    {segment.replace(/-/g, " ").charAt(0).toUpperCase() +
+                      segment.replace(/-/g, " ").slice(1)}
                   </Link>
                 )}
               </Breadcrumb.Item>
